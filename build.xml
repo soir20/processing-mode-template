@@ -24,7 +24,7 @@
         </fileset>
 
         <!-- JAVA MODE: Include Java source files -->
-        <fileset dir="${processing.java}" >
+        <fileset dir="${processing.java.mode}" >
             <include name="*.jar" />
         </fileset>
 
@@ -63,8 +63,9 @@
 
         <!-- JAVA MODE: Copy Java theme resources to our extended mode -->
         <copy file="${processing.java.keywords}" todir="${bundle}" />
+        <copy file="${processing.java.suggestions}" todir="${bundle}" />
         <copy todir="${bundle}/theme/">
-            <fileset dir="${processing.java.resources}" />
+            <fileset dir="${processing.java.theme}" />
         </copy>
 
         <copy todir="${bundle}/mode">
