@@ -23,6 +23,11 @@
             <include name="*.jar" />
         </fileset>
 
+        <!-- JAVA MODE: Include Java source files -->
+        <fileset dir="${processing.java.mode}" >
+            <include name="*.jar" />
+        </fileset>
+
     </path>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - -
