@@ -1,4 +1,4 @@
-package io.github.soir20.processingmode;
+package io.github.soir20.mode.processingmode;
 
 import processing.app.Base;
 import processing.app.Mode;
