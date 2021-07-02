@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<project name="ProcessingMode" default="install" basedir="./">
-    <description>Template for extending Java Mode in Processing 2.0</description>
+<project name="Processing Mode Template" default="install" basedir="./">
+    <description>Template for extending Java Mode tested in Processing 3.5.4</description>
 
     <property file="build.properties" />
 
@@ -77,7 +77,7 @@
         <replaceregexp file="${bundle}/mode.properties" flags="g"
                        match="@@version@@" replace="${build.number}" />
         <replaceregexp file="${bundle}/mode.properties" flags="g"
-                       match="@@pretty-version@@" replace="${release}" />
+                       match="@@prettyVersion@@" replace="${release}" />
     </target>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - -
