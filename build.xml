@@ -73,8 +73,6 @@
         </copy>
 
         <replaceregexp file="${bundle}/mode.properties" flags="g"
-                       match="@@prettyName@@" replace="${prettyName}" />
-        <replaceregexp file="${bundle}/mode.properties" flags="g"
                        match="@@version@@" replace="${build.number}" />
         <replaceregexp file="${bundle}/mode.properties" flags="g"
                        match="@@prettyVersion@@" replace="${release}" />
