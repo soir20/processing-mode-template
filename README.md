@@ -9,7 +9,7 @@ The mode templates for previous versions created by [Martin Leopold](https://git
 This repository is a GitHub template and has some unnecessary files removed. It also works on newer Processing versions (tested on 3.5.4 and 3.0.0).
 
 ## Setup Instructions
-### Prerequistites
+### Prerequisites
 * Clone the [3.x Processing source repository](https://github.com/processing/processing).
 * Install Apache Ant if your IDE does not already include it.
 
@@ -61,7 +61,7 @@ The template mode in this repository extends Java mode. In other words, it funct
 
 If you don't want to extend Java mode, there are only a few changes that you need to make. Java mode-specific snippets have a comment above them starting with `JAVA MODE:`.
 
-### Your Mode Class ([ProcessingMode.java](src/io/github/soir20/processingmode/ProcessingMode.java))
+### Your Mode Class ([ProcessingMode.java](src/io/github/soir20/mode/processingmode/ProcessingMode.java))
 To make a general mode, this class should extend `processing.app.Mode` and implement its methods instead of extending `processing.mode.java.JavaMode`. You also don't need to use Java's class loader. Unless you need it, you can remove the `getClassLoader()` method entirely.
 
 ### [build.xml](build.xml)
