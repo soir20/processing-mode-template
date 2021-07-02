@@ -76,6 +76,14 @@
                        match="@@version@@" replace="${build.number}" />
         <replaceregexp file="${bundle}/mode.properties" flags="g"
                        match="@@prettyVersion@@" replace="${release}" />
+
+        <!-- Determine the current epoch with JavaScript -->
+        <script language="javascript"><![CDATA[
+            project.setProperty("epoch.now", Date.now());
+        ]]></script>
+        <replaceregexp file="${bundle}/mode.properties" flags="g"
+                       match="@@lastUpdated@@" replace="${epoch.now}" />
+
     </target>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - -
