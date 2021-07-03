@@ -18,7 +18,7 @@ There are a number of build properties you can set in [build.properties](build.p
 * `lib.name` - the name of your mode. **This must end in "Mode" and match the name of your mode class.**
 * `release` - the "pretty version" of your mode
 * `java.target.version` - the target Java version. 1.8 is Java 8.
-* `epoch.now` - the current epoch in milliseconds. This is overwritten by the build script with the actual time.
+* `epoch.now` - the current epoch time in milliseconds. This is overwritten by the build script with the actual time.
 * `processing.source` - location of the top-level folder of the Processing source
 * `processing.core` - location of core .jar files in the Processing source
 * `processing.app` - location of PDE .jar files in the Processing source
@@ -37,7 +37,7 @@ The [mode.properties](resources/mode.properties) file contains metadata about yo
 * `paragraph` - a long description of your mode
 * `version` - an integer representing the current version of your mode. This template populates this field automatically.
 * `prettyVersion` - the display version of your mode. This template populates this field automatically.
-* `lastUpdated` - 
+* `lastUpdated` - the epoch time in milliseconds when you last updated your mode. This template populates this field automatically.
 * `minRevision` - minimum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. `0246` is Processing 3.0.0.
 * `maxRevision` - maximum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. Unless you know of a specific version that breaks this mode, set this to `0` to indicate no upper bound.
 * `imports` - libraries or other modes to import
