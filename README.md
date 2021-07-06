@@ -38,7 +38,7 @@ The [mode.properties](resources/mode.properties) file contains metadata about yo
 * `sentence` - a short description of your mode
 * `paragraph` - a long description of your mode
 * `version` - an integer representing the current version of your mode. This template populates this field automatically.
-* `prettyVersion` - the display version of your mode. This template replaces this field automatically with the value of `release` in build.properties.
+* `prettyVersion` - the display version of your mode. This template replaces this field with the value of `release` in build.properties automatically.
 * `lastUpdated` - the epoch time in milliseconds when you last updated your mode. This template populates this field automatically.
 * `minRevision` - minimum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. `0246` is Processing 3.0.0.
 * `maxRevision` - maximum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. Unless you know of a specific version that breaks this mode, set this to `0` to indicate no upper bound.
@@ -56,7 +56,17 @@ There are several Ant tasks for building and running your mode:
 * `clean` - deletes the "build" and "dist" folders to clear all build output
 
 ### IntelliJ Setup
-TODO
+IntelliJ requires some additional setup to recognize the imports from the Processing source code correctly in its editor.
+
+You need to add the `app` and `core` folders in the Processing source as modules for your template project. If your mode is a Java mode, you also need to add the `java` folder as a module.
+* File > New > **Module** from Existing Sources
+* Select the folder you want to add from the Processing source (`app`, `core`, or `java`).
+* Select "Create module from existing sources."
+* Keep pressing "Next" while IntelliJ lists the libraries that will be imported.
+* "Finish."
+* Follow these steps again for the other folders.
+
+If you already have the Processing source code set up for IntelliJ with modules, you can use the existing ones instead of overwriting them.
 
 ## Converting This Mode to a Non-Java Mode
 The template mode in this repository extends Java mode. In other words, it functions identically to Java mode, but you could add more features to Java mode if you wanted.
