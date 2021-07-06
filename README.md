@@ -25,7 +25,7 @@ There are a number of build properties you can set in [build.properties](build.p
 * `processing.executable` - location of your Processing executable used by the `run` build task
 * `processing.modes` - installation location for Processing modes used by the `install` build task
 
-Descriptions of Java mode-specific properties are in the [Java mode build.properties](#buildpropertiesbuildproperties) section.
+Descriptions of Java mode-specific properties are in the [Java mode build.properties](#buildproperties) section.
 
 ### Creating a Mode Class
 The name of your mode class must match `lib.name` in the build properties. You can either extend an existing mode or extend the abstract `processing.app.Mode` class.
