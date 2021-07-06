@@ -38,7 +38,7 @@ The [mode.properties](resources/mode.properties) file contains metadata about yo
 * `sentence` - a short description of your mode
 * `paragraph` - a long description of your mode
 * `version` - an integer representing the current version of your mode. This template populates this field automatically.
-* `prettyVersion` - the display version of your mode. This template populates this field automatically.
+* `prettyVersion` - the display version of your mode. This template replaces this field automatically with the value of `release` in build.properties.
 * `lastUpdated` - the epoch time in milliseconds when you last updated your mode. This template populates this field automatically.
 * `minRevision` - minimum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. `0246` is Processing 3.0.0.
 * `maxRevision` - maximum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. Unless you know of a specific version that breaks this mode, set this to `0` to indicate no upper bound.
