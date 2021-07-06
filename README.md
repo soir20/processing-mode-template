@@ -58,7 +58,7 @@ There are several Ant tasks for building and running your mode:
 ### IntelliJ Setup
 IntelliJ requires some additional setup to recognize the imports from the Processing source code correctly in its editor.
 
-You need to add the `app` and `core` folders in the Processing source as modules for your template project. If your mode is a Java mode, you also need to add the `java` folder as a module.
+You need to add the `app` and `core` folders in the Processing source as modules for your mode project. If your mode is a Java mode, you also need to add the `java` folder as a module.
 * File > New > **Module** from Existing Sources
 * Select the folder you want to add from the Processing source (`app`, `core`, or `java`).
 * Select "Create module from existing sources."
