@@ -1,12 +1,12 @@
 # Processing Mode Template
 This is an example setup to create a new mode in [Processing 3](https://processing.org/). It extends Processing's default Java mode, though you can easily remove the Java mode dependencies to create a mode for a different language.
 
-This template has been tested with Processing 3.5.4 and 3.0.0.
+This template has been tested with Processing 3.5.4, 3.0, and 3.0a11. 3.0a10 and previous versions will not load the template.
 
 ## Credits
 The mode templates for previous versions created by [Martin Leopold](https://github.com/martinleopold/TemplateMode) and [Joel Moniz](https://github.com/joelmoniz/TemplateMode/tree/3.0-compatibility) provided a guide for this template.
 
-This repository is a GitHub template and has some unnecessary files removed. It also works on newer Processing versions (tested on 3.5.4 and 3.0.0).
+This repository is a GitHub template and has some unnecessary files removed. It also works on newer Processing versions (tested on 3.5.4, 3.0, and 3.0a11).
 
 ## Setup Instructions
 ### Prerequisites
@@ -40,7 +40,7 @@ The [mode.properties](resources/mode.properties) file contains metadata about yo
 * `version` - an integer representing the current version of your mode. This template populates this field automatically.
 * `prettyVersion` - the display version of your mode. This template replaces this field with the value of `release` in build.properties automatically.
 * `lastUpdated` - the epoch time in milliseconds when you last updated your mode. This template populates this field automatically.
-* `minRevision` - minimum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. `0246` is Processing 3.0.0.
+* `minRevision` - minimum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. `0238` is [Processing 3.0a11](https://github.com/processing/processing/releases/tag/processing-0238-3.0a11).
 * `maxRevision` - maximum Processing [revision](https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt) that this mode will work on. Unless you know of a specific version that breaks this mode, set this to `0` to indicate no upper bound.
 * `imports` - libraries or other modes to import
 

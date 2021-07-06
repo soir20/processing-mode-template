@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Processing Mode Template" default="install" basedir="./">
-    <description>Template for extending Java Mode tested in Processing 3.5.4</description>
+    <description>Template for extending Java Mode tested in Processing 3.0</description>
 
     <property file="build.properties" />
 
