@@ -68,6 +68,11 @@ You need to add the `app` and `core` folders in the Processing source as modules
 
 If you already have the Processing source code set up for IntelliJ with modules, you can use the existing ones instead of overwriting them.
 
+You also need to add build.xml as an Ant build file:
+* View > Tool Windows > Ant
+* "Add Ant build file" in the tool window that opens.
+* Choose "[build.xml](build.xml)" in the root of this repository.
+
 ## Converting This Mode to a Non-Java Mode
 The template mode in this repository extends Java mode. In other words, it functions identically to Java mode, but you could add more features to Java mode if you wanted.
 
