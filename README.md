@@ -68,6 +68,11 @@ You need to add the `app` and `core` folders in the Processing source as modules
 
 If you already have the Processing source code set up for IntelliJ with modules, you can use the existing ones instead of overwriting them.
 
+Finally, add the new modules as dependencies to your mode's module. You can do this by hovering over code marked as an error in IntelliJ and selecting "Add module as dependency." You can also add the dependencies manually:
+* File > Project Structure > Modules
+* Select your mode's module.
+* Press the plus sign button (alt + insert) to add modules from Processing as dependencies.
+
 You also need to add build.xml as an Ant build file:
 * View > Tool Windows > Ant
 * "Add Ant build file" in the tool window that opens.
