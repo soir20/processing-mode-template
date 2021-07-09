@@ -10,7 +10,7 @@ This repository is a GitHub template and has some unnecessary files removed. It 
 
 ## Setup Instructions
 ### Prerequisites
-* Clone the [3.x Processing source repository](https://github.com/processing/processing).
+* Clone the [3.x Processing source repository](https://github.com/processing/processing) and **build it at least once**.
 * Install Apache Ant if your IDE does not already include it.
 
 ### Setting the Build Properties
